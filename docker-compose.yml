@@ -8,6 +8,7 @@ services:
       - "8080:8080"
     environment:
       spring.datasource.url: jdbc:postgresql://host.docker.internal:5432/weather_db
+      X-RapidAPI-Key: 3d01127322msh1a2e27f642dc1d5p164ea1jsnad2a44421a29
     depends_on:
       - postgres-service
 

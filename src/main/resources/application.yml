@@ -14,7 +14,7 @@ spring:
     password: root
 
 external-api-url: https://weatherapi-com.p.rapidapi.com/current.json?q=Minsk
-X-RapidAPI-Key: 3d01127322msh1a2e27f642dc1d5p164ea1jsnad2a44421a29
+X-RapidAPI-Key: ${RAPID_API_KEY}
 X-RapidAPI-Host: weatherapi-com.p.rapidapi.com
 
 save-frequency-minutes: 2

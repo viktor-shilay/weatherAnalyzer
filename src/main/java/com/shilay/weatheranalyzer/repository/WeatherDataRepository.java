@@ -13,7 +13,7 @@ import java.util.Optional;
 @Repository
 public interface WeatherDataRepository extends JpaRepository<WeatherData, Long> {
 
-    Optional<WeatherData> findTopByOrderByIdDesc();
+    Optional<WeatherData> findTopByOrderByTimestampDesc();
 
     @Query("""
             SELECT new com.shilay.weatheranalyzer.dto.WeatherDataAvg(
