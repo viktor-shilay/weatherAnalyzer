@@ -1,0 +1,21 @@
+version: '3'
+services:
+
+  weather-analyzer-service:
+    container_name: weather-analyzer-app
+    image: viktorshilay/weather-analyzer-app
+    ports:
+      - "8080:8080"
+    environment:
+      spring.datasource.url: jdbc:postgresql://host.docker.internal:5432/weather_db
+    depends_on:
+      - postgres-service
+
+  postgres-service:
+    container_name: postgres-db
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: weather_db
