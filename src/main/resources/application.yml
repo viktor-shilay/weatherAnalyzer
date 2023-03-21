@@ -1,0 +1,20 @@
+database:
+  port: 5432
+  host: localhost
+  schema: weather_db
+
+server:
+  servlet:
+    context-path: /api/v1
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${database.host}:${database.port}/${database.schema}
+    username: postgres
+    password: root
+
+external-api-url: https://weatherapi-com.p.rapidapi.com/current.json?q=Minsk
+X-RapidAPI-Key: 3d01127322msh1a2e27f642dc1d5p164ea1jsnad2a44421a29
+X-RapidAPI-Host: weatherapi-com.p.rapidapi.com
+
+save-frequency-minutes: 1

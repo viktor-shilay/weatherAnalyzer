@@ -1,4 +1,4 @@
-package by.shilay.app.weatheranalyzer;
+package com.shilay.weatheranalyzer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
