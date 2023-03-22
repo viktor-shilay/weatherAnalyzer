@@ -12,6 +12,9 @@ spring:
     url: jdbc:postgresql://${database.host}:${database.port}/${database.schema}
     username: postgres
     password: root
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 external-api-url: https://weatherapi-com.p.rapidapi.com/current.json?q=Minsk
 X-RapidAPI-Key: ${RAPID_API_KEY}
