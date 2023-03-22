@@ -57,10 +57,10 @@ public class ScheduledTask {
             ResponseEntity<WeatherDataDto> response = restTemplate.exchange(
                     externalAPIUrl, HttpMethod.GET, requestEntity, WeatherDataDto.class);
             body = Optional.ofNullable(response.getBody());
-        } catch (ResourceAccessException ex){
+        } catch (ResourceAccessException ex) {
             log.warn("External API is not available!");
         }
-        if(body.isEmpty()) {
+        if (body.isEmpty()) {
             log.warn("External API did not send required data");
             return Optional.empty();
         }

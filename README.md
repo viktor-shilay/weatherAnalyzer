@@ -1,6 +1,6 @@
 # Weather Analyzer
 ## Description
-The application receives information about the weather in Minsk from external API ([Weather-API](https://www.docker.com/)),
+The application receives information about the weather in Minsk from external API ([Weather-API](https://rapidapi.com/weatherapi/api/weatherapi-com)),
 according to a schedule, and saves it into the database.
 
 ## Features
