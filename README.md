@@ -24,6 +24,8 @@ $ docker-compose up -d
 Now you have weather-app running on port 8080 and postgres database running on 5432 port.
 
 ## API Endpoints
+To send HTTP requests you can use Swagger (available at http://localhost:8080/api/v1/swagger-ui.html) 
+or [Postman](https://www.postman.com/downloads/) or something like that.
 
 ### 1. Get the actual weather information
 
